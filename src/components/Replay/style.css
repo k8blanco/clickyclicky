@@ -1,0 +1,22 @@
+/* Replay CSS */
+
+#replay {
+    position:absolute;
+    width: 40rem;
+    height: 15rem;
+    top: 50%;  /* position the top  edge of the element at the middle of the parent */
+    left: 50%; /* position the left edge of the element at the middle of the parent */
+    transform: translate(-50%, -50%);
+    z-index:100;
+    background-color: #69f0ae;
+    border: solid 0.5rem #9fffe0;
+    padding: 3rem;
+    font-size: 2rem;
+    font-family: "McLaren", cursive;
+}
+
+.btn {
+    background-color: #9fffe0;
+    color: black;
+    font-family: "McLaren", cursive;
+}

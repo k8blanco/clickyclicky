@@ -22,7 +22,7 @@ class App extends Component {
   //Game Logic 
   ResetGame = () =>  {
     this.setState({
-      currentScored: 0,
+      currentScore: 0,
       gameOver: false,
       wasClicked: []
     });
@@ -76,8 +76,6 @@ class App extends Component {
       <div>
         <Navbar
           className="row"
-          score={this.state.currentScore}
-          topScore={this.state.topScore}
           message={this.state.message}
         />
         <Score topScore={this.state.topScore} score={this.state.currentScore}/>
