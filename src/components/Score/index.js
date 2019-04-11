@@ -3,22 +3,16 @@ import "./style.css"
 
 function Score(props) {
     return (
-        <div className="row score">
-            <div className="col s1 m6 right-align">
-                <h4 className="inline">
-                    Score:
-                </h4>
-                <h4 className="inline ml-2">
-                    {props.score}
-                </h4>
-            </div>
-            <div className="col s1 m6">
-                <h4 className="inline">
-                    Top Score:
-                </h4>
-                <h4 className="inline ml-2">
-                    {props.topScore}
-                </h4>
+        <div className="row">
+            <div className="card scoreCard col s12 m4 push-m4 z-depth-3">
+                <div className="card-content scoreContent">
+                    <div className="row center">
+                        <h4 className="score">Your Score: {props.score}</h4>
+                    </div>
+                    <div className="row center">
+                        <h4 className="score">Top Score:  {props.topScore}</h4>
+                    </div>
+                </div>
             </div>
         </div>
     )

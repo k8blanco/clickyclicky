@@ -4,7 +4,7 @@ require("./style.css")
 function ClickCard(props) {
     return (
         // <div className="col s4">
-        <div className="card">
+        <div className="card z-depth-3 clickCard">
             <div className="card-content center">              
                 <img 
                     src={props.image}

@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import ClickCard from "./components/ClickCard";
 import Replay from "./components/Replay";
-// import Navbar from "./components/Navbar";
 // import Footer from "./components/Footer";
 import cards from "./cards.json";
 import Score from "./components/Score";
+import Navbar from './components/Navbar';
 // import './App.css';
 // const cards = require ("./cards.json");
 
@@ -74,8 +74,14 @@ class App extends Component {
   render() {
     return (
       <div>
+        <Navbar
+          className="row"
+          score={this.state.currentScore}
+          topScore={this.state.topScore}
+          message={this.state.message}
+        />
         <Score topScore={this.state.topScore} score={this.state.currentScore}/>
-        <div className="container" id="mainContent">
+        <div className="flex-container" id="mainContent">
           {this.state.gameOver && <Replay reset={this.ResetGame}/>}
           <div className="flex-box">  
               {this.MakeLlamas()}    

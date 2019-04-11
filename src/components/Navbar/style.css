@@ -1,0 +1,36 @@
+/* Nav CSS */ 
+
+nav {
+    height: 8rem;
+    background-color: #69f0ae;
+}
+
+.message {
+    font-size: 2rem;
+    font-family: "McLaren", cursive;
+    margin-right: 3rem;
+    margin-top: 3rem;
+    color: black;
+}
+
+.brand-logo {
+    margin-top: -1rem;
+    margin-left: 2rem;
+}
+
+.swing {
+    animation: swing ease-in-out 1s infinite alternate;
+    float: left;
+}
+
+.swing:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: rotate(45deg);
+}
+
+@keyframes swing {
+    0% { transform: rotate(3deg); }
+    100% { transform: rotate(-3deg); }
+}
