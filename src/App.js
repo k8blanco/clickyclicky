@@ -77,7 +77,7 @@ class App extends Component {
         <Score topScore={this.state.topScore} score={this.state.currentScore}/>
         <div className="container" id="mainContent">
           {this.state.gameOver && <Replay reset={this.ResetGame}/>}
-          <div className="row">  
+          <div className="flex-box">  
               {this.MakeLlamas()}    
           </div>
         </div>

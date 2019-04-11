@@ -3,7 +3,7 @@ require("./style.css")
 
 function ClickCard(props) {
     return (
-        <div className="col s4">
+        // <div className="col s4">
         <div className="card">
             <div className="card-content center">              
                 <img 
@@ -13,7 +13,7 @@ function ClickCard(props) {
                 />      
             </div>
         </div>
-        </div>
+        // </div>
     )
 }
 
